@@ -11,7 +11,7 @@ module.exports = {
      paths.appSrc + '/index.js',
   ],
   output: {
-    path: paths.appPublic + '/js',
+    path: paths.appBuild + '/js',
     publicPath: 'js/',
     filename: 'bundle.js',
   },
@@ -33,11 +33,11 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: paths.appPublic,
+    contentBase: paths.appBuild,
   },
   plugins: [
     new CleanWebpackPlugin(['css/main.css', 'js/bundle.js'], {
-      root: paths.appPublic,
+      root: paths.appBuild,
       verbose: true,
       dry: false,
     }),
