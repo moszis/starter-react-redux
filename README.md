@@ -8,7 +8,7 @@ Starter-React-Redux contains the bare minimum to develop a real world complex ap
 1. Before you start working with Starter-React-Redux, you first need to setup your environment. Make sure you have the following installed:
     * [Git](https://git-scm.com/downloads)
     * [NodeJs and Npm](https://nodejs.org/en/download/current/)
-    * an IDE to write js code in, for example [Webstorm](https://www.jetbrains.com/webstorm/download/)
+    * an IDE to write js code in, for example [Webstorm](https://www.jetbrains.com/webstorm/download/) or [Visual Studio Code](https://code.visualstudio.com/)
 
 2. Once your environment is prepared, open a command prompt (terminal) and type in the following:
 
@@ -27,8 +27,6 @@ Congratulations! You can now write react redux code.
 
 
 # Video tutorial
-
-I made a video tutorial series, to help people out getting started with react and redux. It covers the basics, like what is react, redux, etc, and also setting up the environment with redux-minimal and guiding you step by step with creating the demo users app. You will also understand why code was written this way, where refactoring was needed, etc.
 
 [Let's learn React and Redux with Javascript's new ES6 syntax, from Beginner to Intermediate to Advanced](https://www.youtube.com/watch?v=d0oUGmSE6IY&list=PLJBrYU54JD2pTblB20OmV7GL6H5J-p2g8)
 
