@@ -17,9 +17,6 @@ var webpack = require('webpack');
 var config = require('../config/webpack.dev.config');
 var paths = require('../config/paths');
 var checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
-var FileSizeReporter = require('react-dev-utils/FileSizeReporter');
-var measureFileSizesBeforeBuild = FileSizeReporter.measureFileSizesBeforeBuild;
-var printFileSizesAfterBuild = FileSizeReporter.printFileSizesAfterBuild;
 
 var useYarn = fs.existsSync(paths.yarnLockFile);
 
@@ -28,19 +25,16 @@ if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
   process.exit(1);
 }
 
-// First, read the current file sizes in build directory.
-// This lets us display how much they changed later.
-measureFileSizesBeforeBuild(paths.appBuild).then(previousFileSizes => {
-  // Remove all content but keep the directory so that
-  // if you're in it, you don't end up in Trash
-  fs.emptyDirSync(paths.appBuild);
+// Remove all content but keep the directory so that
+// if you're in it, you don't end up in Trash
+fs.emptyDirSync(paths.appBuild);
 
-  // Start the webpack build
-  build(previousFileSizes);
+// Start the webpack build
+build();
 
-  // Merge with the public folder
-  copyPublicFolder();
-});
+// Merge with the public folder
+copyPublicFolder();
+
 
 // Print out errors
 function printErrors(summary, errors) {
@@ -53,7 +47,7 @@ function printErrors(summary, errors) {
   }
 
 // Create the production build and print the deployment instructions.
-function build(previousFileSizes) {
+function build() {
     console.log('Creating an optimized production build...');
     webpack(config).run((err, stats) => {
       if (err) {
@@ -73,18 +67,14 @@ function build(previousFileSizes) {
   
       console.log(chalk.green('Compiled successfully.'));
       console.log();
-  
-      console.log('File sizes after gzip:');
-      console.log();
-      //printFileSizesAfterBuild(stats, previousFileSizes); 
-      console.log();
+
   
       var appPackage  = require(paths.appPackageJson);
       var publicUrl = paths.publicUrl;
       var publicPath = config.output.publicPath;
       var publicPathname = url.parse(publicPath).pathname;
       if (publicUrl && publicUrl.indexOf('.github.io/') !== -1) {
-        // "homepage": "http://user.github.io/project"
+
         console.log('The project was built assuming it is hosted at ' + chalk.green(publicPathname) + '.');
         console.log('You can control this with the ' + chalk.green('homepage') + ' field in your '  + chalk.cyan('package.json') + '.');
         console.log();
