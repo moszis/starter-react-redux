@@ -116,7 +116,3 @@ Besides the `start` script, there are also other scripts
 |`build-dev`|Builds the js/css bundle files in the `public` folder. Adds debugging code for development|
 |`build-prod`|Builds the js/css bundle minified files in the `public` folder|
 
-
-# License
-
-This project is licensed under the MIT license, Copyright (c) 2016 Catalin Luntraru.
