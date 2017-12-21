@@ -49,7 +49,7 @@ The code and implementation are minimal, which lets you focus on the real app, n
 
 # Installed packages
 
-Here are the npm packages that redux-minimal installs:
+Here are the npm packages that starter-react-redux installs:
 
 |Feature|Packages|Benefits|
 |-------|--------|--------|
@@ -85,9 +85,6 @@ Here are the npm packages that redux-minimal installs:
 ||[`babel-loader`](https://github.com/babel/babel-loader)|Helps webpack to compile the new javascript syntax|
 ||[`babel-polyfill`](https://babeljs.io/docs/usage/polyfill/)|Helps the browser to understand the new js syntax|
 ||[`whatwg-fetch`](https://github.com/github/fetch)|Helps the browser to use fetch|
-
-new: 
-
 ||[`dotenv`](https://github.com/motdotla/dotenv)|Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.|
 ||[`fs-extra`](https://github.com/jprichardson/node-fs-extra)|fs-extra adds file system methods that aren't included in the native fs module and adds promise support to the fs methods. It should be a drop in replacement for fs. fs-extra is a drop in replacement for native fs. All methods in fs are attached to fs-extra. All fs methods return promises if the callback isn't passed.|
 ||[`react-dev-utils`](https://www.npmjs.com/package/react-dev-utils)|Variety of development utils developed by facebook.  Primarity used for build process and reporting. |
