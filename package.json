@@ -15,7 +15,7 @@
     "url": "https://github.com/moszis/starter-react-redux"
   },
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --history-api-fallback --host localhost --port 8080",
+    "start": "node scripts/build-dev.js && webpack-dev-server --config config/webpack.config.js --inline --hot --history-api-fallback --host localhost --port 8080",
     "build": "node scripts/build-release.js",
     "build-dev": "node scripts/build-dev.js",
     "build-prod": "node scripts/build-release.js",
