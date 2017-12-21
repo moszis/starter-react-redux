@@ -1,25 +1,11 @@
 # React Redux minimal starter kit (boilerplate)
 
-
-<br><a href="http://redux-minimal.js.org/"><img src="http://redux-minimal.js.org/logo/redux-minimal-logo-blue.svg"></a><br><br>
-
-
-[![Join the chat at https://gitter.im/catalin-luntraru/redux-minimal](https://badges.gitter.im/catalin-luntraru/redux-minimal.svg)](https://gitter.im/catalin-luntraru/redux-minimal?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/catalin-luntraru/redux-minimal.svg?branch=master)](https://travis-ci.org/catalin-luntraru/redux-minimal?branch=master)
-[![dependencies](https://david-dm.org/catalin-luntraru/redux-minimal.svg)](https://david-dm.org/catalin-luntraru/redux-minimal)
-[![devDependency Status](https://david-dm.org/catalin-luntraru/redux-minimal/dev-status.svg)](https://david-dm.org/catalin-luntraru/redux-minimal?type=dev)
-
-Redux-Minimal is a minimalist react-redux starter kit (boilerplate) which let's you build rich real world apps. 
-It's not as light as some starter kits which only let you write a simple hello world app and then you have to struggle with installing all the other stuff yourself. 
-And it's also not as packed as other starter kits which confuse you massively with its folder/file structure and arcane scripts.
-
-Redux-Minimal contains the bare minimum to develop a real world complex app and it also comes with a small users app that will show you how to code certain features.
-A demo of the app can be seen here: [http://redux-minimal-app.catalin-luntraru.com](http://redux-minimal-app.catalin-luntraru.com)
+Starter-React-Redux contains the bare minimum to develop a real world complex app.
 
 
 # Getting started
 
-1. Before you start working with redux-minimal, you first need to setup your environment. Make sure you have the following installed:
+1. Before you start working with Starter-React-Redux, you first need to setup your environment. Make sure you have the following installed:
     * [Git](https://git-scm.com/downloads)
     * [NodeJs and Npm](https://nodejs.org/en/download/current/)
     * an IDE to write js code in, for example [Webstorm](https://www.jetbrains.com/webstorm/download/)
@@ -29,7 +15,7 @@ A demo of the app can be seen here: [http://redux-minimal-app.catalin-luntraru.c
     ```sh
     cd C:\js\node\apps
     git clone https://github.com/moszis/starter-react-redux.git app_name
-    cd hello-world
+    cd app_name
     npm install
     npm start
     ```
@@ -48,7 +34,7 @@ I made a video tutorial series, to help people out getting started with react an
 
 # Why use this?
 
-Redux-Minimal contains the minimum npm packages you need to have installed in order to build a react redux real-world app containing:
+Starter-React-Redux contains the minimum npm packages you need to have installed in order to build a react redux real-world app containing:
 * a proper file/folder structure
 * pages (routes)
 * forms with validation
@@ -104,19 +90,11 @@ Here are the npm packages that redux-minimal installs:
 
 
 
-The sample app provides you with basically most of the things you will need when building a new real-world app.
-
-The demo for the app can be found here: 
-[http://redux-minimal-app.catalin-luntraru.com](http://redux-minimal-app.catalin-luntraru.com)
-
-
 # Build your own app
 
-1. Open `webpack.config.js` and change the `app_root` value from `src_users` to `src`
+1. Run `npm start`
 
-2. Run `npm start`
-
-3. Congratulations! You now have a blank `Hello world` starting app
+2. Congratulations! You now have a blank `Hello world` starting app
 
 
 # Scripts
